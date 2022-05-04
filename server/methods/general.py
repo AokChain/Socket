@@ -1,4 +1,4 @@
-from server import utils
+from .. import utils
 
 class General():
     @classmethod

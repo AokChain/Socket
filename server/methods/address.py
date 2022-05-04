@@ -1,4 +1,4 @@
-from server import utils
+from .. import utils
 
 class Address():
     @classmethod
@@ -58,7 +58,7 @@ class Address():
 
         if data["error"] is None:
             utxos = []
-            for index, utxo in enumerate(data["result"]):
+            for utxo in data["result"]:
                 utxos.append({
                     "txid": utxo["txid"],
                     "index": utxo["outputIndex"],
